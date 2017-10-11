@@ -1,0 +1,31 @@
+﻿Der Buildvorgang wurde am 04.05.2015 01:08:35 gestartet.
+     1>Projekt "C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\C++_Lumpy_Navigation\VC120\recast.vcxproj" auf Knoten "2", Rebuild Ziel(e).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\Navigation\Include\recastnavigation\Recast\Include /nologo /W3 /WX- /MP /O2 /Ob2 /Oy- /D PREPARED_SLN /D WIN32 /D _WINDOWS /D NDEBUG /D "CMAKE_INTDIR=\"Release\"" /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"..\Release_temp\recast\\" /Fd"..\Release_temp\recast\vc120.pdb" /Gd /TP /wd4996 /wd4355 /wd4244 /wd4267 /analyze- /errorReport:prompt  /Zm500 ..\Navigation\Include\recastnavigation\Recast\Source\Recast.cpp ..\Navigation\Include\recastnavigation\Recast\Source\RecastAlloc.cpp ..\Navigation\Include\recastnavigation\Recast\Source\RecastArea.cpp ..\Navigation\Include\recastnavigation\Recast\Source\RecastContour.cpp ..\Navigation\Include\recastnavigation\Recast\Source\RecastFilter.cpp ..\Navigation\Include\recastnavigation\Recast\Source\RecastLayers.cpp ..\Navigation\Include\recastnavigation\Recast\Source\RecastMesh.cpp ..\Navigation\Include\recastnavigation\Recast\Source\RecastMeshDetail.cpp ..\Navigation\Include\recastnavigation\Recast\Source\RecastRasterization.cpp ..\Navigation\Include\recastnavigation\Recast\Source\RecastRegion.cpp
+         Recast.cpp
+         RecastAlloc.cpp
+         RecastArea.cpp
+         RecastContour.cpp
+         RecastFilter.cpp
+         RecastLayers.cpp
+         RecastMesh.cpp
+         RecastMeshDetail.cpp
+         RecastRasterization.cpp
+         RecastRegion.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"..\Release\recast.lib" /NOLOGO ..\Release_temp\recast\Recast.obj
+         ..\Release_temp\recast\RecastAlloc.obj
+         ..\Release_temp\recast\RecastArea.obj
+         ..\Release_temp\recast\RecastContour.obj
+         ..\Release_temp\recast\RecastFilter.obj
+         ..\Release_temp\recast\RecastLayers.obj
+         ..\Release_temp\recast\RecastMesh.obj
+         ..\Release_temp\recast\RecastMeshDetail.obj
+         ..\Release_temp\recast\RecastRasterization.obj
+         ..\Release_temp\recast\RecastRegion.obj
+         recast.vcxproj -> C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\C++_Lumpy_Navigation\VC120\..\Release\recast.lib
+     1>Die Erstellung des Projekts "C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\C++_Lumpy_Navigation\VC120\recast.vcxproj" ist abgeschlossen, Rebuild Ziel(e).
+
+Build erfolgreich.
+
+Verstrichene Zeit 00:00:00.90

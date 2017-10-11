@@ -1,0 +1,7 @@
+C:\Users\Ano\Desktop\Programmieren\Tools\GreyMagic\GreyMagic\obj\Debug\GreyMagic.csprojResolveAssemblyReference.cache
+C:\Users\Ano\Desktop\Programmieren\Tools\GreyMagic\GreyMagic\bin\Debug\GreyMagic.dll
+C:\Users\Ano\Desktop\Programmieren\Tools\GreyMagic\GreyMagic\bin\Debug\GreyMagic.pdb
+C:\Users\Ano\Desktop\Programmieren\Tools\GreyMagic\GreyMagic\bin\Debug\fasmdll_managed.dll
+C:\Users\Ano\Desktop\Programmieren\Tools\GreyMagic\GreyMagic\bin\Debug\fasmdll_managed.pdb
+C:\Users\Ano\Desktop\Programmieren\Tools\GreyMagic\GreyMagic\obj\Debug\GreyMagic.dll
+C:\Users\Ano\Desktop\Programmieren\Tools\GreyMagic\GreyMagic\obj\Debug\GreyMagic.pdb

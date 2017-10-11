@@ -1,0 +1,21 @@
+﻿Der Buildvorgang wurde am 05.05.2016 18:06:31 gestartet.
+     1>Projekt "C:\Users\Ano\Documents\Visual Studio 2015\Projects\CS_1.12.1_ClassicFramework\Loader\Loader.vcxproj" auf Knoten "5", Rebuild Ziel(e).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(368,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>ClCompile:
+         C:\Users\Ano\Desktop\Programmieren\Tools\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Release\\" /Fd"Release\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
+         Main.cpp
+     1>Main.cpp(155): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1769): note: Siehe Deklaration von "sprintf"
+     1>Main.cpp(181): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\corecrt_wstring.h(121): note: Siehe Deklaration von "wcscpy"
+       Link:
+         C:\Users\Ano\Desktop\Programmieren\Tools\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\Release\Internal\Loader.dll" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"..\Release\Internal\Loader.pdb" /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\Release\Internal\Loader.lib" /MACHINE:X86 /SAFESEH /DLL Release\Main.obj
+         Code wird generiert.
+         All 117 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+         Codegenerierung ist abgeschlossen.
+         Loader.vcxproj -> C:\Users\Ano\Documents\Visual Studio 2015\Projects\CS_1.12.1_ClassicFramework\Loader\..\Release\Internal\Loader.dll
+     1>Die Erstellung von Projekt "C:\Users\Ano\Documents\Visual Studio 2015\Projects\CS_1.12.1_ClassicFramework\Loader\Loader.vcxproj" ist abgeschlossen (Rebuild Ziel(e)).
+
+Der Buildvorgang wurde erfolgreich ausgeführt.
+
+Verstrichene Zeit 00:00:01.62

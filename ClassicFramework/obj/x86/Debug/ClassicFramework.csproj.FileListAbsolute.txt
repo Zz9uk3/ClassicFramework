@@ -1,0 +1,32 @@
+C:\Users\Ano\Desktop\C#_1.12.1_Framework\Release\ClassicFramework.exe.config
+C:\Users\Ano\Desktop\C#_1.12.1_Framework\Release\ClassicFramework.exe
+C:\Users\Ano\Desktop\C#_1.12.1_Framework\Release\ClassicFramework.pdb
+C:\Users\Ano\Desktop\C#_1.12.1_Framework\ThadHack\obj\x86\Debug\ClassicFramework.csprojResolveAssemblyReference.cache
+C:\Users\Ano\Desktop\C#_1.12.1_Framework\ThadHack\obj\x86\Debug\ThadHack.Properties.Resources.resources
+C:\Users\Ano\Desktop\C#_1.12.1_Framework\ThadHack\obj\x86\Debug\ClassicFramework.csproj.GenerateResource.Cache
+C:\Users\Ano\Desktop\C#_1.12.1_Framework\ThadHack\obj\x86\Debug\ClassicFramework.exe
+C:\Users\Ano\Desktop\C#_1.12.1_Framework\ThadHack\obj\x86\Debug\ClassicFramework.pdb
+C:\Users\Ano\Desktop\C#_1.12.1_Framework\ThadHack\obj\x86\Debug\ClassicFramework.GUI_Forms.Main.resources
+C:\Users\Ano\Desktop\C#_1.12.1_Framework\ThadHack\obj\x86\Debug\ClassicFramework.GUI_Forms.FormRestockItem.resources
+C:\Users\Ano\Desktop\C#_1.12.1_Framework\ClassicFramework\obj\x86\Debug\ClassicFramework.exe
+C:\Users\Ano\Desktop\C#_1.12.1_Framework\ClassicFramework\obj\x86\Debug\ClassicFramework.pdb
+C:\Users\Ano\Desktop\C#_1.12.1_Framework\ClassicFramework\obj\x86\Debug\ClassicFramework.csprojResolveAssemblyReference.cache
+C:\Users\Ano\Desktop\C#_1.12.1_Framework\ClassicFramework\obj\x86\Debug\ClassicFramework.Properties.Resources.resources
+C:\Users\Ano\Desktop\C#_1.12.1_Framework\ClassicFramework\obj\x86\Debug\ClassicFramework.csproj.GenerateResource.Cache
+C:\Users\Ano\Desktop\Pass\C#_1.12.1_Framework\Release\ClassicFramework.exe.config
+C:\Users\Ano\Desktop\Pass\C#_1.12.1_Framework\ClassicFramework\obj\x86\Debug\ClassicFramework.exe
+C:\Users\Ano\Desktop\Pass\C#_1.12.1_Framework\ClassicFramework\obj\x86\Debug\ClassicFramework.pdb
+C:\Users\Ano\Desktop\Pass\C#_1.12.1_Framework\Release\ClassicFramework.exe
+C:\Users\Ano\Desktop\Pass\C#_1.12.1_Framework\Release\ClassicFramework.pdb
+C:\Users\Ano\Desktop\Pass\C#_1.12.1_Framework\ClassicFramework\obj\x86\Debug\ClassicFramework.csprojResolveAssemblyReference.cache
+C:\Users\Ano\Desktop\Pass\C#_1.12.1_Framework\ClassicFramework\obj\x86\Debug\ClassicFramework.Properties.Resources.resources
+C:\Users\Ano\Desktop\Pass\C#_1.12.1_Framework\ClassicFramework\obj\x86\Debug\ClassicFramework.csproj.GenerateResource.Cache
+C:\Users\mxmrt\Documents\Visual Studio 2015\Projects\CS_1.12.1_ClassicFramework\Release\ClassicFramework.exe.config
+C:\Users\mxmrt\Documents\Visual Studio 2015\Projects\CS_1.12.1_ClassicFramework\ClassicFramework\obj\x86\Debug\ClassicFramework.exe
+C:\Users\mxmrt\Documents\Visual Studio 2015\Projects\CS_1.12.1_ClassicFramework\ClassicFramework\obj\x86\Debug\ClassicFramework.pdb
+C:\Users\mxmrt\Documents\Visual Studio 2015\Projects\CS_1.12.1_ClassicFramework\Release\Internal\ClassicFramework.exe.config
+C:\Users\mxmrt\Documents\Visual Studio 2015\Projects\CS_1.12.1_ClassicFramework\Release\Internal\ClassicFramework.exe
+C:\Users\mxmrt\Documents\Visual Studio 2015\Projects\CS_1.12.1_ClassicFramework\Release\Internal\ClassicFramework.pdb
+C:\Users\mxmrt\Documents\Visual Studio 2015\Projects\CS_1.12.1_ClassicFramework\ClassicFramework\obj\x86\Debug\ClassicFramework.csprojResolveAssemblyReference.cache
+C:\Users\mxmrt\Documents\Visual Studio 2015\Projects\CS_1.12.1_ClassicFramework\ClassicFramework\obj\x86\Debug\ClassicFramework.Properties.Resources.resources
+C:\Users\mxmrt\Documents\Visual Studio 2015\Projects\CS_1.12.1_ClassicFramework\ClassicFramework\obj\x86\Debug\ClassicFramework.csproj.GenerateResource.Cache

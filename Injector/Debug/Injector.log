@@ -1,0 +1,44 @@
+﻿Der Buildvorgang wurde am 06.05.2015 03:40:05 gestartet.
+     1>Projekt "C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\Injector\Injector.vcxproj" auf Knoten "2", Rebuild Ziel(e).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(357,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\Injector.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\Injector.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib AssemblyInfo.cpp inject.cpp Injector.cpp main.cpp
+         AssemblyInfo.cpp
+     1>AssemblyInfo.cpp(40): warning C4947: "RequestMinimum": als veraltet markiert.
+                 Meldung: "Assembly level declarative security is obsolete and is no longer enforced by the CLR by default. See http://go.microsoft.com/fwlink/?LinkID=155570 for more information."
+         inject.cpp
+         Injector.cpp
+         main.cpp
+     1>main.cpp(19): error C2812: #import wird mit /clr:pure und /clr:safe nicht unterstützt.
+     1>main.cpp(62): error C2653: 'MSXML': Keine Klasse oder Namespace
+     1>main.cpp(62): error C2065: 'IXMLDOMDocument2Ptr': nichtdeklarierter Bezeichner
+     1>main.cpp(62): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'xmlDoc'
+     1>main.cpp(62): error C2065: 'xmlDoc': nichtdeklarierter Bezeichner
+     1>main.cpp(63): error C2065: 'xmlDoc': nichtdeklarierter Bezeichner
+     1>main.cpp(63): error C2228: Links von ".CreateInstance" muss sich eine Klasse/Struktur/Union befinden.
+                 Typ ist 'unknown-type'
+     1>main.cpp(63): error C2653: 'MSXML': Keine Klasse oder Namespace
+     1>main.cpp(63): error C2065: 'DOMDocument60': nichtdeklarierter Bezeichner
+     1>main.cpp(66): error C2065: 'xmlDoc': nichtdeklarierter Bezeichner
+     1>main.cpp(66): error C2227: Links von "->load" muss sich ein Zeiger auf Klassen-/Struktur-/Union-/generischen Typ befinden.
+                 Typ ist 'unknown-type'
+     1>main.cpp(73): error C2065: 'xmlDoc': nichtdeklarierter Bezeichner
+     1>main.cpp(73): error C2227: Links von "->setProperty" muss sich ein Zeiger auf Klassen-/Struktur-/Union-/generischen Typ befinden.
+                 Typ ist 'unknown-type'
+     1>main.cpp(74): error C2653: 'MSXML': Keine Klasse oder Namespace
+     1>main.cpp(74): error C2065: 'IXMLDOMNodePtr': nichtdeklarierter Bezeichner
+     1>main.cpp(74): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'path'
+     1>main.cpp(74): error C2065: 'xmlDoc': nichtdeklarierter Bezeichner
+     1>main.cpp(74): error C2227: Links von "->selectSingleNode" muss sich ein Zeiger auf Klassen-/Struktur-/Union-/generischen Typ befinden.
+                 Typ ist 'unknown-type'
+     1>main.cpp(75): error C2819: Der Typ 'std::vector<char,std::allocator<char>>' hat keinen überladenen Elementoperator '->'
+                 Wollten Sie stattdessen '.' verwenden?
+     1>main.cpp(75): error C2039: 'text': Ist kein Element von 'std::vector<char,std::allocator<char>>'
+         Code wird generiert...
+     1>Die Erstellung des Projekts "C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\Injector\Injector.vcxproj" ist abgeschlossen, Rebuild Ziel(e) -- FEHLER.
+
+Fehler beim Buildvorgang.
+
+Verstrichene Zeit 00:00:03.57

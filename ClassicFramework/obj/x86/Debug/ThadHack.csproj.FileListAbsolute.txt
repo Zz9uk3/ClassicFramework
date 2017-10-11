@@ -1,0 +1,13 @@
+C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\ThadHack\obj\x86\Debug\ThadHack.GUI_Forms.Main.resources
+C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\ThadHack\obj\x86\Debug\ThadHack.GUI_Forms.FormRestockItem.resources
+C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\ThadHack\obj\x86\Debug\ThadHack.Properties.Resources.resources
+C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\ThadHack\obj\x86\Debug\ThadHack.csproj.GenerateResource.Cache
+C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\ThadHack\obj\x86\Debug\ThadHack.exe
+C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\ThadHack\obj\x86\Debug\ThadHack.pdb
+C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\Release\ThadHack.exe.config
+C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\Release\ThadHack.pdb
+C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\ThadHack\obj\x86\Debug\ThadHack.csprojResolveAssemblyReference.cache
+C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\Release\ThadHack.exe
+C:\Users\Ano\Desktop\C#_1.12.1_Framework\Release\ThadHack.exe.config
+C:\Users\Ano\Desktop\C#_1.12.1_Framework\ThadHack\obj\x86\Debug\ThadHack.exe
+C:\Users\Ano\Desktop\C#_1.12.1_Framework\ThadHack\obj\x86\Debug\ThadHack.pdb

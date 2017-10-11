@@ -1,0 +1,35 @@
+﻿Der Buildvorgang wurde am 06.05.2015 03:40:49 gestartet.
+     1>Projekt "C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\Injector\Injector.vcxproj" auf Knoten "2", Rebuild Ziel(e).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(357,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /Zi /clr /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /Gy /fp:precise /fp:except- /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Release\autobaht.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /Zi /clr /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /Gy /fp:precise /fp:except- /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Release\autobaht.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib AssemblyInfo.cpp inject.cpp Injector.cpp main.cpp
+         AssemblyInfo.cpp
+     1>AssemblyInfo.cpp(40): warning C4947: "RequestMinimum": als veraltet markiert.
+                 Meldung: "Assembly level declarative security is obsolete and is no longer enforced by the CLR by default. See http://go.microsoft.com/fwlink/?LinkID=155570 for more information."
+         inject.cpp
+         Injector.cpp
+         main.cpp
+     1>main.cpp(19): warning C4279: 'value': der Bezeichner in der Typbibliothek 'msxml6.dll' ist ein Schlüsselwort; benutzen Sie den 'rename'-Qualifizierer
+     1>main.cpp(55): warning C4101: 'wowkey': Unreferenzierte lokale Variable
+         Code wird generiert...
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /clr /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /Gy /fp:precise /fp:except- /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /TP /analyze- /errorReport:prompt "C:\Users\Ano\AppData\Local\Temp\.NETFramework,Version=v4.0.AssemblyAttributes.cpp"
+         .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Release\app.res" app.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\Release\autobaht.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /ASSEMBLYRESOURCE:Release\Injector.Form1.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\Release\autobaht.pdb" /SUBSYSTEM:WINDOWS /LTCG /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 /SAFESEH Release\app.res
+         Release\AssemblyInfo.obj
+         Release\inject.obj
+         Release\Injector.obj
+         Release\main.obj
+         Release\stdafx.obj
+         "Release\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         LINK : /LTCG wurde angegeben, es ist jedoch keine Codegenerierung erforderlich. Entfernen Sie /LTCG aus der Linkbefehlszeile, um die Linkerleistung zu erhöhen.
+         Injector.vcxproj -> C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\Injector\..\Release\autobaht.exe
+     1>Die Erstellung des Projekts "C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\Injector\Injector.vcxproj" ist abgeschlossen, Rebuild Ziel(e).
+
+Build erfolgreich.
+
+Verstrichene Zeit 00:00:05.04

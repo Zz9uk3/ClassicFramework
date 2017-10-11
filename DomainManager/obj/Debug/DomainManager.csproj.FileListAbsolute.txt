@@ -1,0 +1,12 @@
+C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\Release\Internal\DomainManager.dll
+C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\Release\Internal\DomainManager.pdb
+C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\DomainManager\obj\Debug\DomainManager.dll
+C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\DomainManager\obj\Debug\DomainManager.pdb
+C:\Users\Ano\Desktop\C#_1.12.1_Framework\Release\Internal\DomainManager.dll
+C:\Users\Ano\Desktop\C#_1.12.1_Framework\Release\Internal\DomainManager.pdb
+C:\Users\Ano\Desktop\C#_1.12.1_Framework\DomainManager\obj\Debug\DomainManager.dll
+C:\Users\Ano\Desktop\C#_1.12.1_Framework\DomainManager\obj\Debug\DomainManager.pdb
+C:\Users\mxmrt\Documents\Visual Studio 2015\Projects\CS_1.12.1_ClassicFramework\Release\Internal\DomainManager.dll
+C:\Users\mxmrt\Documents\Visual Studio 2015\Projects\CS_1.12.1_ClassicFramework\Release\Internal\DomainManager.pdb
+C:\Users\mxmrt\Documents\Visual Studio 2015\Projects\CS_1.12.1_ClassicFramework\DomainManager\obj\Debug\DomainManager.dll
+C:\Users\mxmrt\Documents\Visual Studio 2015\Projects\CS_1.12.1_ClassicFramework\DomainManager\obj\Debug\DomainManager.pdb

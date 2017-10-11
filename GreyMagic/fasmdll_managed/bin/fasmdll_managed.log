@@ -1,0 +1,26 @@
+﻿Der Buildvorgang wurde am 17.04.2015 01:04:44 gestartet.
+     1>Projekt "C:\Users\Ano\Desktop\Programmieren\Tools\GreyMagic\fasmdll_managed\fasmdll_managed.vcxproj" auf Knoten "2", Rebuild Ziel(e).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"bin\\" /Fd"bin\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib _AssemblyInfo.cpp fasmdll_managed.cpp
+         _AssemblyInfo.cpp
+     1>_AssemblyInfo.cpp(38): warning C4947: "RequestMinimum": als veraltet markiert.
+                 Meldung: "Assembly level declarative security is obsolete and is no longer enforced by the CLR by default. See http://go.microsoft.com/fwlink/?LinkID=155570 for more information."
+         fasmdll_managed.cpp
+     1>c:\users\ano\desktop\programmieren\tools\greymagic\fasmdll_managed\_AssemblyInfo.cpp(38): warning C4947: "RequestMinimum": als veraltet markiert.
+                 Meldung: "Assembly level declarative security is obsolete and is no longer enforced by the CLR by default. See http://go.microsoft.com/fwlink/?LinkID=155570 for more information."
+     1>fasmdll_managed.cpp(169): warning C4800: 'BOOL': Variable wird auf booleschen Wert ('True' oder 'False') gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+         Code wird generiert...
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"bin\\" /Fd"bin\vc120.pdb" /TP /analyze- /errorReport:prompt "C:\Users\Ano\AppData\Local\Temp\.NETFramework,Version=v4.0,Profile=Client.AssemblyAttributes.cpp"
+         .NETFramework,Version=v4.0,Profile=Client.AssemblyAttributes.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"bin\fasmdll_managed.dll" /INCREMENTAL:NO /NOLOGO FASM.OBJ /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"bin\fasmdll_managed.pdb" /ASSEMBLYDEBUG /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 /DLL bin\_AssemblyInfo.obj
+         bin\fasmdll_managed.obj
+         "bin\.NETFramework,Version=v4.0,Profile=Client.AssemblyAttributes.obj"
+         FASM.OBJ
+     1>FASM.OBJ : warning LNK4042: Objekt mehrmals angegeben; zusätzliche Objekte werden ignoriert.
+         fasmdll_managed.vcxproj -> C:\Users\Ano\Desktop\Programmieren\Tools\GreyMagic\fasmdll_managed\bin\fasmdll_managed.dll
+     1>Die Erstellung des Projekts "C:\Users\Ano\Desktop\Programmieren\Tools\GreyMagic\fasmdll_managed\fasmdll_managed.vcxproj" ist abgeschlossen, Rebuild Ziel(e).
+
+Build erfolgreich.
+
+Verstrichene Zeit 00:00:03.26

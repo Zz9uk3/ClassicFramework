@@ -1,0 +1,15 @@
+﻿Der Buildvorgang wurde am 06.05.2015 03:40:59 gestartet.
+     1>Projekt "C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\FastCallDll\FastCallDll.vcxproj" auf Knoten "2", Rebuild Ziel(e).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(357,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D FASTCALLDLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt dllmain.cpp
+         dllmain.cpp
+     1>c:\users\ano\documents\visual studio 2013\projects\c#_1.12.1_injected_bot\fastcalldll\dllmain.cpp(82): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211): Siehe Deklaration von 'fopen'
+     1>c:\users\ano\documents\visual studio 2013\projects\c#_1.12.1_injected_bot\fastcalldll\dllmain.cpp(99): warning C4091: 'typedef ': Ignoriert auf der linken Seite von 'XYZXYZ', wenn keine Variable deklariert wurde
+     1>c:\users\ano\documents\visual studio 2013\projects\c#_1.12.1_injected_bot\fastcalldll\dllmain.cpp(100): warning C4091: 'typedef ': Ignoriert auf der linken Seite von 'Intersection', wenn keine Variable deklariert wurde
+     1>Die Erstellung des Projekts "C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\FastCallDll\FastCallDll.vcxproj" ist abgeschlossen, Rebuild Ziel(e) -- FEHLER.
+
+Fehler beim Buildvorgang.
+
+Verstrichene Zeit 00:00:00.59

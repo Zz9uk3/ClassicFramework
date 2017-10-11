@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8A82B3FA-AE80-471C-BA85-D0F12BC67C8D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ClassicFramework</RootNamespace>
+    <AssemblyName>ClassicFramework</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Release\Internal\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Release\Internal\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Fasm.NET, Version=1.0.5697.28632, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Release\Internal\Fasm.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants\Enums.cs" />
+    <Compile Include="Constants\Strings.cs" />
+    <Compile Include="Constants\Structs.cs" />
+    <Compile Include="Constants\WinImports.cs" />
+    <Compile Include="Helpers\GreyMagic\AllocatedMemory.cs" />
+    <Compile Include="Helpers\GreyMagic\ExternalProcessReader.cs" />
+    <Compile Include="Helpers\GreyMagic\InProcessMemoryReader.cs" />
+    <Compile Include="Helpers\GreyMagic\Internals\DetourManager.cs" />
+    <Compile Include="Helpers\GreyMagic\Internals\Manager.cs" />
+    <Compile Include="Helpers\GreyMagic\Internals\PatchManager.cs" />
+    <Compile Include="Helpers\GreyMagic\MarshalCache.cs" />
+    <Compile Include="Helpers\GreyMagic\MemoryBase.cs" />
+    <Compile Include="Helpers\GreyMagic\MemoryProtectionOperation.cs" />
+    <Compile Include="Helpers\GreyMagic\MissingAttributeException.cs" />
+    <Compile Include="Helpers\GreyMagic\Native\Imports.cs" />
+    <Compile Include="Helpers\GreyMagic\Native\PeHeaderParser.cs" />
+    <Compile Include="Helpers\GreyMagic\SafeMemoryHandle.cs" />
+    <Compile Include="Helpers\GreyMagic\Utilities.cs" />
+    <Compile Include="Ingame\Chat.cs" />
+    <Compile Include="Ingame\Inventory.cs" />
+    <Compile Include="Ingame\Spells.cs" />
+    <Compile Include="Helpers\Logger.cs" />
+    <Compile Include="LuaFunctions\CustomFuncs\LoadBars.cs" />
+    <Compile Include="LuaFunctions\CustomFuncs\RemoveBars.cs" />
+    <Compile Include="LuaFunctions\CustomFuncs\SaveBars.cs" />
+    <Compile Include="LuaFunctions\CustomFuncs\AutoLoot.cs" />
+    <Compile Include="LuaFunctions\CustomFuncs\Thanks.cs" />
+    <Compile Include="LuaFunctions\CustomFuncs\Loot.cs" />
+    <Compile Include="LuaFunctions\CustomFuncs\Interact.cs" />
+    <Compile Include="LuaFunctions\CustomFuncs\UseObject.cs" />
+    <Compile Include="LuaFunctions\CustomFuncs\UseSpell.cs" />
+    <Compile Include="LuaFunctions\CustomFuncs\UseItem.cs" />
+    <Compile Include="LuaFunctions\CustomFuncs\NoClip4.cs" />
+    <Compile Include="LuaFunctions\CustomFuncs\NoClip3.cs" />
+    <Compile Include="LuaFunctions\CustomFuncs\NoClip2.cs" />
+    <Compile Include="LuaFunctions\CustomFuncs\NoClip1.cs" />
+    <Compile Include="LuaFunctions\CustomFuncs\Wallclimb.cs" />
+    <Compile Include="LuaFunctions\CustomFuncs\SuperFly.cs" />
+    <Compile Include="LuaFunctions\CustomFuncs\Commands.cs" />
+    <Compile Include="LuaFunctions\CustomFuncs\AddToZ.cs" />
+    <Compile Include="LuaFunctions\CustomFuncs\About.cs" />
+    <Compile Include="LuaFunctions\FunctionHandling.cs" />
+    <Compile Include="LuaFunctions\Lua.cs" />
+    <Compile Include="LuaFunctions\RegisterFunctionHook.cs" />
+    <Compile Include="LuaFunctions\UnregisterFunctionHook.cs" />
+    <Compile Include="Mem\Functions.cs" />
+    <Compile Include="Mem\DirectX.cs" />
+    <Compile Include="AntiWarden\HookWardenMemScan.cs" />
+    <Compile Include="Mem\GetEndScene.cs" />
+    <Compile Include="Mem\Hacks.cs" />
+    <Compile Include="Mem\Memory.cs" />
+    <Compile Include="Mem\ObjectManager.cs" />
+    <Compile Include="Mem\OnRightClickObject.cs" />
+    <Compile Include="Mem\OnRightClickUnitHook.cs" />
+    <Compile Include="ObfuscationSettings.cs" />
+    <Compile Include="Objects\LocalPlayer.cs" />
+    <Compile Include="Objects\WoWGameObject.cs" />
+    <Compile Include="Objects\WoWItem.cs" />
+    <Compile Include="Objects\WoWObject.cs" />
+    <Compile Include="Objects\WoWPlayer.cs" />
+    <Compile Include="Objects\WoWUnit.cs" />
+    <Compile Include="Constants\Offsets.cs" />
+    <Compile Include="OOP\DllInjector.cs" />
+    <Compile Include="OOP\Launch.cs" />
+    <Compile Include="OOP\Settings.cs" />
+    <Compile Include="PacketSender\CDataStore.cs" />
+    <Compile Include="PacketSender\NetclientSendHook.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AntiWarden\HookModule32.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Wait.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>if defined EAZFUSCATOR_NET_HOME (if /I "$(ConfigurationName)" == "Release" Eazfuscator.NET.exe "$(TargetPath)" --msbuild-project-path "$(ProjectPath)" --msbuild-project-configuration "$(ConfigurationName)" --msbuild-project-platform "$(PlatformName)" --msbuild-solution-path "$(SolutionPath)" -n --newline-flush -v 5.2) else (echo Eazfuscator.NET obfuscator is not installed on this machine. Obfuscation will be skipped.)</PostBuildEvent>
+  </PropertyGroup>
+</Project>

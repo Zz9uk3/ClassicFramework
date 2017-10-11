@@ -1,0 +1,26 @@
+﻿Der Buildvorgang wurde am 17.07.2015 14:38:40 gestartet.
+     1>Projekt "C:\Users\Ano\Desktop\C#_1.12.1_Framework\C++_Lumpy_Navigation\VC120\Navigation.vcxproj" auf Knoten "2", Rebuild Ziel(e).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(356,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(357,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\Navigation\Include\g3dlite /I..\Navigation\Include\recastnavigation\Detour\Source /I..\Navigation\Include\recastnavigation\Detour\Include /I..\Navigation\Include\recastnavigation\Detour /I..\Navigation\Include\recastnavigation /Zi /nologo /W3 /WX- /sdl /O2 /Ob2 /Oy- /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D USE_STANDARD_MALLOC /D PREPARED_SLN /D _WINDOWS /D _WIN32 /D _CRT_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Release\"" /D DT_POLYREF64 /D _WINDLL /D _MBCS /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"..\Release_temp\\" /Fd"..\Release_temp\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\Navigation\DllMain.cpp
+         DllMain.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\Navigation\Include\g3dlite /I..\Navigation\Include\recastnavigation\Detour\Source /I..\Navigation\Include\recastnavigation\Detour\Include /I..\Navigation\Include\recastnavigation\Detour /I..\Navigation\Include\recastnavigation /Zi /nologo /W3 /WX- /sdl /O2 /Ob2 /Oy- /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D USE_STANDARD_MALLOC /D PREPARED_SLN /D _WINDOWS /D _WIN32 /D _CRT_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Release\"" /D DT_POLYREF64 /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"..\Release_temp\\" /Fd"..\Release_temp\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\Navigation\MoveMap.cpp ..\Navigation\Navigation.cpp ..\Navigation\PathFinder.cpp
+         MoveMap.cpp
+         Navigation.cpp
+         PathFinder.cpp
+     1>..\Navigation\PathFinder.cpp(677): warning C4800: 'int': Variable wird auf booleschen Wert ('True' oder 'False') gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+     1>..\Navigation\PathFinder.cpp(678): warning C4800: 'int': Variable wird auf booleschen Wert ('True' oder 'False') gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+         Code wird generiert...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\Release\Internal\Navigation.dll" /INCREMENTAL:NO /NOLOGO ..\Release\detour.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\..\Release\Internal\Navigation.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\Release\Internal\Navigation.lib" /MACHINE:X86 /SAFESEH /DLL ..\Release_temp\DllMain.obj
+         ..\Release_temp\MoveMap.obj
+         ..\Release_temp\Navigation.obj
+         ..\Release_temp\PathFinder.obj
+            Bibliothek "..\..\Release\Internal\Navigation.lib" und Objekt "..\..\Release\Internal\Navigation.exp" werden erstellt.
+         Navigation.vcxproj -> C:\Users\Ano\Desktop\C#_1.12.1_Framework\C++_Lumpy_Navigation\VC120\..\..\Release\Internal\Navigation.dll
+     1>Die Erstellung des Projekts "C:\Users\Ano\Desktop\C#_1.12.1_Framework\C++_Lumpy_Navigation\VC120\Navigation.vcxproj" ist abgeschlossen, Rebuild Ziel(e).
+
+Build erfolgreich.
+
+Verstrichene Zeit 00:00:03.64

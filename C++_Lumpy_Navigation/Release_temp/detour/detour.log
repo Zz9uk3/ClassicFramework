@@ -1,0 +1,23 @@
+﻿Der Buildvorgang wurde am 04.05.2015 01:08:39 gestartet.
+     1>Projekt "C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\C++_Lumpy_Navigation\VC120\detour.vcxproj" auf Knoten "2", Rebuild Ziel(e).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\Navigation\Include\recastnavigation\Detour\Include /I..\Navigation\Include\recastnavigation\Detour\Source /I..\Navigation\Include\recastnavigation /I..\Navigation\Include\recastnavigation\Detour /nologo /W3 /WX- /MP /O2 /Ob2 /Oy- /D PREPARED_SLN /D WIN32 /D _WINDOWS /D NDEBUG /D DT_POLYREF64 /D "CMAKE_INTDIR=\"Release\"" /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"..\Release_temp\detour\\" /Fd"..\Release_temp\detour\vc120.pdb" /Gd /TP /wd4996 /wd4355 /wd4244 /wd4267 /analyze- /errorReport:prompt  /Zm500 ..\Navigation\Include\recastnavigation\Detour\Source\DetourAlloc.cpp ..\Navigation\Include\recastnavigation\Detour\Source\DetourCommon.cpp ..\Navigation\Include\recastnavigation\Detour\Source\DetourNavMeshBuilder.cpp ..\Navigation\Include\recastnavigation\Detour\Source\DetourNavMesh.cpp ..\Navigation\Include\recastnavigation\Detour\Source\DetourNavMeshQuery.cpp ..\Navigation\Include\recastnavigation\Detour\Source\DetourNode.cpp
+         DetourAlloc.cpp
+         DetourCommon.cpp
+         DetourNavMeshBuilder.cpp
+         DetourNavMesh.cpp
+         DetourNavMeshQuery.cpp
+         DetourNode.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"..\Release\detour.lib" /NOLOGO ..\Release_temp\detour\DetourAlloc.obj
+         ..\Release_temp\detour\DetourCommon.obj
+         ..\Release_temp\detour\DetourNavMeshBuilder.obj
+         ..\Release_temp\detour\DetourNavMesh.obj
+         ..\Release_temp\detour\DetourNavMeshQuery.obj
+         ..\Release_temp\detour\DetourNode.obj
+         detour.vcxproj -> C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\C++_Lumpy_Navigation\VC120\..\Release\detour.lib
+     1>Die Erstellung des Projekts "C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\C++_Lumpy_Navigation\VC120\detour.vcxproj" ist abgeschlossen, Rebuild Ziel(e).
+
+Build erfolgreich.
+
+Verstrichene Zeit 00:00:00.50

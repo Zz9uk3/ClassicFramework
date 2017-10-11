@@ -1,0 +1,13 @@
+C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\Release\Internal\GreyMagic.dll
+C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\Release\Internal\GreyMagic.pdb
+C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\GreyMagic\GreyMagic\obj\x86\Debug\GreyMagic.dll
+C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\GreyMagic\GreyMagic\obj\x86\Debug\GreyMagic.pdb
+C:\Users\Ano\Desktop\C#_1.12.1_Framework\Release\Internal\GreyMagic.dll
+C:\Users\Ano\Desktop\C#_1.12.1_Framework\Release\Internal\GreyMagic.pdb
+C:\Users\Ano\Desktop\C#_1.12.1_Framework\GreyMagic\GreyMagic\obj\x86\Debug\GreyMagic.dll
+C:\Users\Ano\Desktop\C#_1.12.1_Framework\GreyMagic\GreyMagic\obj\x86\Debug\GreyMagic.pdb
+C:\Users\mxmrt\Documents\Visual Studio 2015\Projects\CS_1.12.1_ClassicFramework\Release\Internal\GreyMagic.dll
+C:\Users\mxmrt\Documents\Visual Studio 2015\Projects\CS_1.12.1_ClassicFramework\Release\Internal\GreyMagic.pdb
+C:\Users\mxmrt\Documents\Visual Studio 2015\Projects\CS_1.12.1_ClassicFramework\GreyMagic\GreyMagic\obj\x86\Debug\GreyMagic.dll
+C:\Users\mxmrt\Documents\Visual Studio 2015\Projects\CS_1.12.1_ClassicFramework\GreyMagic\GreyMagic\obj\x86\Debug\GreyMagic.pdb
+C:\Users\mxmrt\Documents\Visual Studio 2015\Projects\CS_1.12.1_ClassicFramework\GreyMagic\GreyMagic\obj\x86\Debug\GreyMagic.csprojResolveAssemblyReference.cache

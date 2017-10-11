@@ -1,0 +1,11 @@
+﻿Der Buildvorgang wurde am 06.05.2015 03:43:21 gestartet.
+     1>Projekt "C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\C++_Lumpy_Navigation\VC120\Navigation.vcxproj" auf Knoten "2", Rebuild Ziel(e).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(357,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IInclude\g3dlite /Irecastnavigation\Detour\Source /Irecastnavigation\Detour\Include /Irecastnavigation\Detour /Irecastnavigation /ZI /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\Navigation.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\Navigation\DllMain.cpp ..\Navigation\MoveMap.cpp ..\Navigation\Navigation.cpp ..\Navigation\PathFinder.cpp
+     1>cl : Befehlszeile error D8016: Die Befehlszeilenoptionen /ZI und /O2 sind inkompatibel.
+     1>Die Erstellung des Projekts "C:\Users\Ano\Documents\Visual Studio 2013\Projects\C#_1.12.1_Injected_Bot\C++_Lumpy_Navigation\VC120\Navigation.vcxproj" ist abgeschlossen, Rebuild Ziel(e) -- FEHLER.
+
+Fehler beim Buildvorgang.
+
+Verstrichene Zeit 00:00:00.09
