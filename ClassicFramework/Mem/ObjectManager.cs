@@ -12,7 +12,7 @@ namespace ClassicFramework.Mem
         /// <summary>
         /// Delegate Instances for: Enum, Callback, GetPtrByGuid, GetActivePlayer
         /// </summary>
-        private static bool Prepared = false;
+        private static bool Prepared;
         private static IntPtr ourCallback;
         private static /*readonly*/ EnumVisibleObjectsCallback _callback;
         private static ClntObjMgrObjectPtr getPtrForGuid;
@@ -22,7 +22,7 @@ namespace ClassicFramework.Mem
         /// <summary>
         /// Objectmanager internal dictionary
         /// </summary>
-        private static Dictionary<UInt64, WoWObject> _Objects = new Dictionary<ulong, WoWObject>();
+        private static Dictionary<ulong, WoWObject> _Objects = new Dictionary<ulong, WoWObject>();
 
         /// <summary>
         /// Objectmanager internal lists
@@ -33,16 +33,14 @@ namespace ClassicFramework.Mem
         {
             get
             {
-                List<WoWUnit> mobs = ObjectManager.Mobs;
-                WoWUnit target = mobs.OfType<WoWUnit>()
-                    .Where(i => i.Guid == ObjectManager.Player.TargetGuid)
-                    .FirstOrDefault();
+                List<WoWUnit> mobs = Mobs;
+                WoWUnit target = mobs
+                    .FirstOrDefault(i => i.Guid == Player.TargetGuid);
                 if (target == null)
                 {
-                    List<WoWPlayer> players = ObjectManager.Players;
-                    target = players.OfType<WoWPlayer>()
-                        .Where(i => i.Guid == ObjectManager.Player.TargetGuid)
-                        .FirstOrDefault();
+                    List<WoWPlayer> players = Players;
+                    target = players
+                        .FirstOrDefault(i => i.Guid == Player.TargetGuid);
                 }
                 return target;
             }
@@ -58,23 +56,17 @@ namespace ClassicFramework.Mem
             }
         }
 
-        internal static List<WoWPlayer> Players
+        internal static List<WoWGameObject> GameObjects
         {
             get
             {
-                return Objects.OfType<WoWPlayer>()
+                return Objects.OfType<WoWGameObject>()
                     .ToList();
             }
         }
-
-        internal static List<WoWItem> Items
-        {
-            get
-            {
-                return Objects.OfType<WoWItem>()
-                    .ToList();
-            }
-        }
+        internal static List<WoWPlayer> Players => Objects.OfType<WoWPlayer>()
+            .ToList();
+        internal static List<WoWItem> Items => Objects.OfType<WoWItem>().ToList();
 
         /// <summary>
         /// Delegates for: Enum, Callback, GetPtrByGuid, GetActivePlayer
@@ -128,7 +120,7 @@ namespace ClassicFramework.Mem
                 Player = new LocalPlayer(playerGuid, playerObject);
 
             // set the pointer of all objects to 0
-            foreach (WoWObject obj in _Objects.Values)
+            foreach (var obj in _Objects.Values)
                 obj.Pointer = IntPtr.Zero;
 
             EnumVisibleObjects(ourCallback, -1);
@@ -148,44 +140,51 @@ namespace ClassicFramework.Mem
         /// </summary>
         private static int Callback(int filter, ulong guid)
         {
-            if (guid == 0) return 0;
-            IntPtr ptr = getPtrForGuid(filter, guid);
-            if (ptr == IntPtr.Zero) return 0;
-            if (_Objects.ContainsKey(guid))
+            try
             {
-                _Objects[guid].Pointer = ptr;
-            }
-            else
-            {
-                byte objType = Memory.Reader.Read<byte>(IntPtr.Add(ptr, (int)Offsets.ObjectManager.ObjType));
-                switch (objType)
+                if (guid == 0) return 0;
+                IntPtr ptr = getPtrForGuid(filter, guid);
+                if (ptr == IntPtr.Zero) return 0;
+                if (_Objects.ContainsKey(guid))
                 {
-                    case (byte)Enums.ObjTypes.OT_CONTAINER:
-                    case (byte)Enums.ObjTypes.OT_ITEM:
-                        WoWItem tmpItem = new WoWItem(guid, ptr);
-                        ////Console.WriteLine(tmpItem.Name + " " + guid + " " + ptr.ToString("X8"));
-                        _Objects.Add(guid, tmpItem);
-                        break;
-
-                    case (byte)Enums.ObjTypes.OT_UNIT:
-                        WoWUnit tmpUnit = new WoWUnit(guid, ptr);
-                        ////Console.WriteLine(ptr.ToString("X8") + " " + guid);
-                        _Objects.Add(guid, tmpUnit);
-                        break;
-
-                    case (byte)Enums.ObjTypes.OT_PLAYER:
-                        WoWPlayer tmpPlayer = new WoWPlayer(guid, ptr);
-                        _Objects.Add(guid, tmpPlayer);
-                        break;
-
-                    case (byte)Enums.ObjTypes.OT_GAMEOBJ:
-                        WoWGameObject tmpGameObject = new WoWGameObject(guid, ptr);
-                        _Objects.Add(guid, tmpGameObject);
-                        break;
-
-                    default:
-                        break;
+                    _Objects[guid].Pointer = ptr;
                 }
+                else
+                {
+                    var objType = Memory.Reader.Read<byte>(IntPtr.Add(ptr, (int)Offsets.ObjectManager.ObjType));
+                    switch (objType)
+                    {
+                        case (byte)Enums.ObjTypes.OT_CONTAINER:
+                        case (byte)Enums.ObjTypes.OT_ITEM:
+                            WoWItem tmpItem = new WoWItem(guid, ptr);
+                            ////Console.WriteLine(tmpItem.Name + " " + guid + " " + ptr.ToString("X8"));
+                            _Objects.Add(guid, tmpItem);
+                            break;
+
+                        case (byte)Enums.ObjTypes.OT_UNIT:
+                            WoWUnit tmpUnit = new WoWUnit(guid, ptr);
+                            ////Console.WriteLine(ptr.ToString("X8") + " " + guid);
+                            _Objects.Add(guid, tmpUnit);
+                            break;
+
+                        case (byte)Enums.ObjTypes.OT_PLAYER:
+                            WoWPlayer tmpPlayer = new WoWPlayer(guid, ptr);
+                            _Objects.Add(guid, tmpPlayer);
+                            break;
+
+                        case (byte)Enums.ObjTypes.OT_GAMEOBJ:
+                            WoWGameObject tmpGameObject = new WoWGameObject(guid, ptr);
+                            _Objects.Add(guid, tmpGameObject);
+                            break;
+
+                        default:
+                            break;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                // ignored
             }
             return 1;
         }

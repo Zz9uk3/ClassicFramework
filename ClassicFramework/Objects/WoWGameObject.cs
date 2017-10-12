@@ -48,7 +48,7 @@ namespace ClassicFramework.Objects
             {
                 IntPtr ptr1 = base.ReadRelative<IntPtr>(0x214);
                 IntPtr ptr2 = Memory.Reader.Read<IntPtr>(IntPtr.Add(ptr1, 0x8));
-                return Memory.Reader.ReadString(ptr2, Encoding.ASCII, 30);
+                return Memory.Reader.ReadString(ptr2, Encoding.ASCII);
             }
         }
 

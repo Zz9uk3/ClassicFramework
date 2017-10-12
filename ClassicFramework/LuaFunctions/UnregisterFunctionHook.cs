@@ -28,17 +28,17 @@ namespace ClassicFramework.LuaFunctions
             uint CustomFuncTramps = 0x0047FA7D;
 
             CustomFuncs.About.Remove(ref CustomFuncTramps);
-            CustomFuncs.SuperFly.Remove(ref CustomFuncTramps);
-            CustomFuncs.AddToZ.Remove(ref CustomFuncTramps);
+            //CustomFuncs.SuperFly.Remove(ref CustomFuncTramps);
+            //CustomFuncs.AddToZ.Remove(ref CustomFuncTramps);
             CustomFuncs.Commands.Remove(ref CustomFuncTramps);
-            Wallclimb.Remove(ref CustomFuncTramps);
+            //Wallclimb.Remove(ref CustomFuncTramps);
 
             CustomFuncTramps = 0x0047FA99;
 
             NoClip1.Remove(ref CustomFuncTramps);
             NoClip2.Remove(ref CustomFuncTramps);
             NoClip3.Remove(ref CustomFuncTramps);
-            NoClip4.Remove(ref CustomFuncTramps);
+            //NoClip4.Remove(ref CustomFuncTramps);
             Loot.Remove(ref CustomFuncTramps);
             UseItem.Remove(ref CustomFuncTramps);
             UseSpell.Remove(ref CustomFuncTramps);
@@ -54,9 +54,9 @@ namespace ClassicFramework.LuaFunctions
             RemoveBars.Remove(ref CustomFuncTramps);
 
 
-            Memory.GetHack("Superfly").Remove();
-            Memory.GetHack("Antijump").Remove();
-            SuperFly.enabled = false;
+            //Memory.GetHack("Superfly").Remove();
+            //Memory.GetHack("Antijump").Remove();
+            //SuperFly.enabled = false;
         }
 
         internal static void Init()

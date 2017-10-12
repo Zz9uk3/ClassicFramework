@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -35,7 +36,17 @@ namespace ClassicFramework.OOP
                 IntPtr.Zero, IntPtr.Zero, false,
                 WinImports.ProcessCreationFlags.CREATE_DEFAULT_ERROR_MODE,
                 IntPtr.Zero, null, ref si, out pi);
-            Thread.Sleep(500);
+            var proc = Process.GetProcessById((int)pi.dwProcessId);
+            while (!proc.WaitForInputIdle(1000))
+            {
+                proc.Refresh();
+            }
+            while (string.IsNullOrWhiteSpace(proc.MainWindowTitle))
+            {
+                Thread.Sleep(200);
+                proc.Refresh();
+            }
+            Thread.Sleep(2000);
             WinImports.SuspendThread(pi.hThread);
             DllInjectionResult res = DllInjector.GetInstance.Inject((int)pi.dwProcessId);
             WinImports.ResumeThread(pi.hThread);

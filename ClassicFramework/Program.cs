@@ -20,7 +20,7 @@ namespace ClassicFramework
 {
     static class Program
     {
-        static System.Reflection.Assembly CurrentDomain_AssemblyResolve(object sender, ResolveEventArgs args)
+        static Assembly CurrentDomain_AssemblyResolve(object sender, ResolveEventArgs args)
         {
             string name = new AssemblyName(args.Name).Name;
             string path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "\\" + name + ".dll";
@@ -43,13 +43,16 @@ namespace ClassicFramework
             // Setting culture for float etc (. instead of ,)
             CultureInfo.DefaultThreadCurrentCulture = CultureInfo.InvariantCulture;
             CultureInfo.DefaultThreadCurrentUICulture = CultureInfo.InvariantCulture;
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
             // ClassicFramework cant be run alone!
             if (Process.GetCurrentProcess().ProcessName.StartsWith("ClassicFramework"))
             {
+                if (!Assembly.GetExecutingAssembly().Location.ToLower().Contains("internal"))
+                {
+                    MessageBox.Show("Your file structure is corrupt. Please redownload ClassicFramework");
+                    Environment.Exit(-1);
+                }
                 // Do the settings exist?
                 if (!File.Exists(".\\Settings.xml"))
                 {
@@ -67,12 +70,10 @@ namespace ClassicFramework
                 Launch.Run();
                 Environment.Exit(0);
             }
-            //WinImports.AllocConsole();
-
             WinImports.LoadLibrary(
                 Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "\\FastCallDll.dll"
             );
-
+            //WinImports.AllocConsole();
             //Logger.Append("We are injected now!");
 
             string path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);

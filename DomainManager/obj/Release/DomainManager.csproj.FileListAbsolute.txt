@@ -33,3 +33,9 @@ C:\Users\Ano\Documents\Visual Studio 2015\Projects\CS_1.12.1_ClassicFramework\Re
 C:\Users\Ano\Documents\Visual Studio 2015\Projects\CS_1.12.1_ClassicFramework\DomainManager\obj\Release\DomainManager.csprojResolveAssemblyReference.cache
 C:\Users\Ano\Documents\Visual Studio 2015\Projects\CS_1.12.1_ClassicFramework\DomainManager\obj\Release\DomainManager.dll
 C:\Users\Ano\Documents\Visual Studio 2015\Projects\CS_1.12.1_ClassicFramework\DomainManager\obj\Release\DomainManager.pdb
+C:\Users\Ano\Documents\Visual Studio 2017\Projects\ClassicFramework\Release\Internal\DomainManager.dll
+C:\Users\Ano\Documents\Visual Studio 2017\Projects\ClassicFramework\Release\Internal\DomainManager.pdb
+C:\Users\Ano\Documents\Visual Studio 2017\Projects\ClassicFramework\DomainManager\obj\Release\DomainManager.csprojResolveAssemblyReference.cache
+C:\Users\Ano\Documents\Visual Studio 2017\Projects\ClassicFramework\DomainManager\obj\Release\DomainManager.csproj.CoreCompileInputs.cache
+C:\Users\Ano\Documents\Visual Studio 2017\Projects\ClassicFramework\DomainManager\obj\Release\DomainManager.dll
+C:\Users\Ano\Documents\Visual Studio 2017\Projects\ClassicFramework\DomainManager\obj\Release\DomainManager.pdb

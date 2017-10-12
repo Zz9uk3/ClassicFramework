@@ -29,17 +29,18 @@ namespace ClassicFramework.LuaFunctions
             uint CustomFuncTramps = 0x0047FA7D;
 
             CustomFuncs.About.Init(ref CustomFuncTramps);
-            CustomFuncs.SuperFly.Init(ref CustomFuncTramps);
-            CustomFuncs.AddToZ.Init(ref CustomFuncTramps);
+            //CustomFuncs.SuperFly.Init(ref CustomFuncTramps);
+            //CustomFuncs.AddToZ.Init(ref CustomFuncTramps);
             CustomFuncs.Commands.Init(ref CustomFuncTramps);
-            Wallclimb.Init(ref CustomFuncTramps);
+            //Wallclimb.Init(ref CustomFuncTramps);
 
             CustomFuncTramps = 0x0047FA99;
 
+            //Console.ReadLine();
             NoClip1.Init(ref CustomFuncTramps);
             NoClip2.Init(ref CustomFuncTramps);
             NoClip3.Init(ref CustomFuncTramps);
-            NoClip4.Init(ref CustomFuncTramps);
+            //NoClip4.Init(ref CustomFuncTramps);
             Loot.Init(ref CustomFuncTramps);
             UseItem.Init(ref CustomFuncTramps);
             UseSpell.Init(ref CustomFuncTramps);

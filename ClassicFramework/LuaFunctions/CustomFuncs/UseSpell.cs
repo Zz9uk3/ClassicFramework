@@ -33,7 +33,7 @@ namespace ClassicFramework.LuaFunctions.CustomFuncs
                 target = ObjectManager.Target;
                 if (target == null) return 0;
 
-                ObjectManager.Player.Spells.Cast(spell);
+                Functions.DoString("CastSpellByName('" + spell + "');");
                 enabled = true;
                 DirectX.RunInEndScene(EndScene);
                 Wait.Remove("SpellTimeout");

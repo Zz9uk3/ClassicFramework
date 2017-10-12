@@ -33,13 +33,9 @@ namespace ClassicFramework.Helpers.GreyMagic
             if (value < 00401000) return default(T);
             try
             {
-                // TODO: Optimize this more. The boxing/unboxing required tends to slow this down.
                 // It may be worth it to simply use memcpy to avoid it, but I doubt thats going to give any noticeable increase in speed.
                 if (address == IntPtr.Zero)
-                {
                     return default(T);
-                    //throw new InvalidOperationException("Cannot retrieve a value at address 0");
-                }
 
                 object ret;
                 switch (MarshalCache<T>.TypeCode)
@@ -47,9 +43,7 @@ namespace ClassicFramework.Helpers.GreyMagic
                     case TypeCode.Object:
 
                         if (MarshalCache<T>.IsIntPtr)
-                        {
-                            return (T) (object) *(IntPtr*) address;
-                        }
+                            return (T)(object)*(IntPtr*)address;
 
                         // If the type doesn't require an explicit Marshal call, then ignore it and memcpy the fuckin thing.
                         if (!MarshalCache<T>.TypeRequiresMarshal)
@@ -57,62 +51,62 @@ namespace ClassicFramework.Helpers.GreyMagic
                             var o = default(T);
                             var ptr = MarshalCache<T>.GetUnsafePtr(ref o);
 
-                            MoveMemory(ptr, (void*) address, MarshalCache<T>.Size);
+                            MoveMemory(ptr, (void*)address, MarshalCache<T>.Size);
 
                             return o;
                         }
 
                         // All System.Object's require marshaling!
-                        ret = Marshal.PtrToStructure(address, typeof (T));
+                        ret = Marshal.PtrToStructure(address, typeof(T));
                         break;
                     case TypeCode.Boolean:
-                        ret = *(byte*) address != 0;
+                        ret = *(byte*)address != 0;
                         break;
                     case TypeCode.Char:
-                        ret = *(char*) address;
+                        ret = *(char*)address;
                         break;
                     case TypeCode.SByte:
-                        ret = *(sbyte*) address;
+                        ret = *(sbyte*)address;
                         break;
                     case TypeCode.Byte:
-                        ret = *(byte*) address;
+                        ret = *(byte*)address;
                         break;
                     case TypeCode.Int16:
-                        ret = *(short*) address;
+                        ret = *(short*)address;
                         break;
                     case TypeCode.UInt16:
-                        ret = *(ushort*) address;
+                        ret = *(ushort*)address;
                         break;
                     case TypeCode.Int32:
-                        ret = *(int*) address;
+                        ret = *(int*)address;
                         break;
                     case TypeCode.UInt32:
-                        ret = *(uint*) address;
+                        ret = *(uint*)address;
                         break;
                     case TypeCode.Int64:
-                        ret = *(long*) address;
+                        ret = *(long*)address;
                         break;
                     case TypeCode.UInt64:
-                        ret = *(ulong*) address;
+                        ret = *(ulong*)address;
                         break;
                     case TypeCode.Single:
-                        ret = *(float*) address;
+                        ret = *(float*)address;
                         break;
                     case TypeCode.Double:
-                        ret = *(double*) address;
+                        ret = *(double*)address;
                         break;
                     case TypeCode.Decimal:
                         // Probably safe to remove this. I'm unaware of anything that actually uses "decimal" that would require memory reading...
-                        ret = *(decimal*) address;
+                        ret = *(decimal*)address;
                         break;
                     default:
                         throw new ArgumentOutOfRangeException();
                 }
-                return (T) ret;
+                return (T)ret;
             }
             catch (AccessViolationException ex)
             {
-                Trace.WriteLine("Access Violation on " + address + " with type " + typeof (T).Name);
+                Trace.WriteLine("Access Violation on " + address + " with type " + typeof(T).Name);
                 return default(T);
             }
         }

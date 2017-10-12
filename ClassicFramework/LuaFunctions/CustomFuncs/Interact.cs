@@ -27,8 +27,7 @@ namespace ClassicFramework.LuaFunctions.CustomFuncs
 
             if (!ObjectManager.EnumObjects()) return 0;
             WoWUnit target = ObjectManager.Target;
-            if (target == null) return 0;
-            target.Interact(false);
+            target?.Interact(false);
             
             return 0;
         }

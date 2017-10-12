@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using ClassicFramework.AntiWarden;
 using System.Collections;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using Binarysharp.Assemblers.Fasm;
 using System.Text;
@@ -17,6 +18,12 @@ namespace ClassicFramework.Mem
         internal static InProcessMemoryReader Reader;
         private static FasmNet Asm;
 
+        [DllImport("AntiQuery.dll")]
+        internal static extern int SetupHideModules(IntPtr processId);
+
+        [DllImport("AntiQuery.dll")]
+        internal static extern int HideAdditionalModules();
+
         /// <summary>
         /// Initialise InternalMemoryReader
         /// </summary>
@@ -28,6 +35,9 @@ namespace ClassicFramework.Mem
 
             // Init the object manager
             ObjectManager.Init();
+
+            SetupHideModules((IntPtr)Process.GetCurrentProcess().Id);
+
             // Apply no collision hack with trees
             Hack Collision1 = new Hack((IntPtr)0x6ABC5A, new byte[] { 0x0F, 0x85, 0x1B, 0x01, 0x00, 0x00 }, "Collision1");
             HookWardenMemScan.AddHack(Collision1);
@@ -41,9 +51,9 @@ namespace ClassicFramework.Mem
             ////DisableCollision.Apply();
 
             // wallclimb hack yay :)
-            Hack Wallclimb = new Hack((IntPtr)0x0080DFFC, new byte[] { 0x00, 0x00, 0x00, 0x00 }, "Wallclimb");
-            HookWardenMemScan.AddHack(Wallclimb);
-            
+            //Hack Wallclimb = new Hack((IntPtr)0x0080DFFC, new byte[] { 0x00, 0x00, 0x00, 0x00 }, "Wallclimb");
+            //HookWardenMemScan.AddHack(Wallclimb);
+
             // Loot patch
             Hack LootPatch = new Hack((IntPtr)0x004C21C0, new byte[] { 0xEB }, "LootPatch");
             HookWardenMemScan.AddHack(LootPatch);
@@ -54,10 +64,10 @@ namespace ClassicFramework.Mem
             HookWardenMemScan.AddHack(LuaUnlock);
             LuaUnlock.Apply();
 
-            Hack Superfly = new Hack((IntPtr)0x006341BC, new byte[] { 0x90, 0x90 }, "Superfly");
-            HookWardenMemScan.AddHack(Superfly);
-            Hack Antijump = new Hack((IntPtr)0x007C625F, new byte[] { 0xEB }, "Antijump");
-            HookWardenMemScan.AddHack(Antijump);
+            //Hack Superfly = new Hack((IntPtr)0x006341BC, new byte[] { 0x90, 0x90 }, "Superfly");
+            //HookWardenMemScan.AddHack(Superfly);
+            //Hack Antijump = new Hack((IntPtr)0x007C625F, new byte[] { 0xEB }, "Antijump");
+            //HookWardenMemScan.AddHack(Antijump);
 
             // See all levels & no language barrier
             Hack SeeAllLevels = new Hack((IntPtr)0x5EC720, new byte[] { 0xC2, 0x08, 0x00 }, new byte[] { 0x55, 0x8b, 0xec }, "SeeAllLevels");
@@ -150,7 +160,7 @@ namespace ClassicFramework.Mem
                     byteCode,
                     originalBytes, parPatchName);
                 HookWardenMemScan.AddHack(parHack);
-                Console.WriteLine($"Protecting {parHack.Name} from Warden at {parHack.address.ToString("X")}");
+                Console.WriteLine($"Protecting {parHack.Name} from Warden at {parHack.Address.ToString("X")}");
                 parHack.Apply();
             }
             else
@@ -189,7 +199,7 @@ namespace ClassicFramework.Mem
                     byteCode,
                     originalBytes, parPatchName);
                 HookWardenMemScan.AddHack(parHack);
-                Console.WriteLine($"Protecting {parHack.Name} from Warden at {parHack.address.ToString("X")}");
+                Console.WriteLine($"Protecting {parHack.Name} from Warden at {parHack.Address.ToString("X")}");
                 parHack.Apply();
             }
             else

@@ -20,7 +20,7 @@ namespace ClassicFramework.LuaFunctions.CustomFuncs
         {
             if (Lua.ArgsCount(parLuaState) != 0) return 0;
 
-            Lua.Print("Thanks for using my framework! If you want to assist me I would be glad if you visit my blog at http://zzuks.blogspot.com and maybe donate a few euro (Yes im poor as fuck as a student)");
+            Lua.Print("Thanks for using my framework! If you want to assist me I would be glad if you visit my page at http://zzukbot.com!");
             
             return 0;
         }
