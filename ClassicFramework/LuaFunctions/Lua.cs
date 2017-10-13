@@ -42,7 +42,7 @@ namespace ClassicFramework.LuaFunctions
 
         internal static void Welcome()
         {
-            Lua.Print("Zzuks ClassicFramework (v0.07b) - Visit http://zzukbot.com\\n" +
+            Lua.Print("Zzuks ClassicFramework (v0.07c) - Visit http://zzukbot.com\\n" +
                 "Use Commands() for an overview\\n"
                 + "Default features: Understand all languages, See all levels, Lua unlocked, Anti AFK");
         }

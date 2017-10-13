@@ -83,7 +83,7 @@ namespace ClassicFramework.Mem
             _Run(ref frameCounter);
             // reset the framecounter
             frameCounter = frameCounter % 180 + 1;
-            if (frameCounter == 0)
+            if (frameCounter == 1)
             {
                 Memory.Reader.Write<int>((IntPtr)Offsets.Functions.LastHardwareAction, Environment.TickCount);
             }
