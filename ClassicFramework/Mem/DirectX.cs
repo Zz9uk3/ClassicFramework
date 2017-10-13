@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Concurrent;
 using System.Runtime.InteropServices;
+using ClassicFramework.Constants;
 using ClassicFramework.Helpers.GreyMagic.Internals;
 using ClassicFramework.LuaFunctions;
 
@@ -77,10 +78,15 @@ namespace ClassicFramework.Mem
                     Lua.Welcome();
                 }
             }
+            
             // run our delegate
             _Run(ref frameCounter);
             // reset the framecounter
             frameCounter = frameCounter % 180 + 1;
+            if (frameCounter == 0)
+            {
+                Memory.Reader.Write<int>((IntPtr)Offsets.Functions.LastHardwareAction, Environment.TickCount);
+            }
             return (int)_endSceneHook.CallOriginal(parDevice);
         }
 

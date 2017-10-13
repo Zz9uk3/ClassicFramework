@@ -86,7 +86,7 @@ namespace ClassicFramework.AntiWarden
             if (WardenLuaStrCheckFuncPtr != luaStrCheckPtr)
             {
                 WardenLuaStrCheckFuncPtr = luaStrCheckPtr;
-                Memory.InjectAsm((uint)pageScanPtr,
+                Memory.InjectAsm((uint)luaStrCheckPtr,
                     "jmp 0x0",
                     "WardenLuaStrCheckJmp");
             }
